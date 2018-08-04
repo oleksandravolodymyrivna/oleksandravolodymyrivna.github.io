@@ -1,0 +1,94 @@
+body {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-family: 'Open Sans Condensed', sans-serif;
+  }
+
+  h1 {
+    font-size: 45px;
+    font-weight: 100;
+    margin-bottom: 25px;
+  }
+
+  img {
+    border-radius: 50%;
+    height: 170px;
+    margin-bottom: 25px;
+  }
+
+  h2 {
+    font-size: 30px;
+    margin: 0 0 24px 0;
+  }
+
+  p {
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 35px;
+  }
+
+  a {
+    color:#fff;
+    outline:0;
+    text-decoration: none;
+    text-align: center;
+  }
+  
+  .wrapper {
+    width: 100vw;
+    height: 100vh;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative; 
+  }
+  
+  .bg {
+    animation: bg 60s linear infinite;
+    background-image: url("background-picture.jpg");
+    height: 100%;
+    position: absolute;
+    background-size: 1300px;
+    width: 6250px;
+  }
+
+  .middle-box {
+    animation: show 2s 1s forwards;
+    opacity: 0;
+    text-align: center;
+    width: 25%;
+    justify-content: center;
+  }
+
+  .nav {
+    display: flex;
+    justify-content: center;
+  }
+
+  .download-button {
+    font-size: 20px;
+    border: 1px solid #fff;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-style:groove;
+    display: block;
+    padding: 10px;
+    text-align: center;
+  }
+  
+
+@keyframes show {
+  0% {
+    transform: translate(0, 20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0);
+    opacity: 1;
+  }
+}
